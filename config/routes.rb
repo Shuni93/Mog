@@ -1,5 +1,14 @@
 Rails.application.routes.draw do
 
+  get 'writepage/new'
+  get '/index' => 'writepage#index'
+
+  get 'my_page/my_info'
+
+  get 'my_page/my_card'
+
+  post 'new_query' => 'writepage#new_query'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
