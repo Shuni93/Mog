@@ -1,10 +1,20 @@
 Rails.application.routes.draw do
 
+  get 'write_pages/title:string'
+
+  get 'write_pages/content:text'
+
+  get 'write_pages/write'
+
+  get 'static_pages/main'
+  get 'static_pages/write'
+  get 'static_pages/mypage'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'application#hello'
+  # root 'application#hello'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
