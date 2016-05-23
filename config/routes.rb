@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'main_page/main'
+
   get 'writepage/new'
   get '/index' => 'writepage#index'
 

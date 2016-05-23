@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Mog</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+  <head>
+    <title>MoG</title>
+    <%=  stylesheet_link_tag  'application' ,  media:  'all' ,  'data-turbolinks- track '  =>  true  %>
+    <%=  javascript_include_tag  'application ' ,  'data-turbolinks-track '  =>  true  %>
+    <%=  csrf_meta_tags  %>
+      <script src= "/ /cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js ">
+      </script>
+  </head>
+  <body>
+    <header  class= "navbar navbar-fixed -top navbar-inverse " >
+      <div  class= "container " >
+        <%=  link_to  "MoG" ,  '/main_page/main' ,  id:"logo"  %>
+        <nav>
+          <ul  class = "nav navbar-nav navbar-right " >
+            <li> <%=  link_to  "글쓰기" ,    '/writepage/new'  %> </li>
+            <li> <%=  link_to  "마이페이지" ,    '#'  %> </li>
+            <li> <%=  link_to  "로그인" ,  '#'  %> </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div  class = "container " >
+      <%=  yield  %>
+      <footer  class = "footer" >
+  <small>
+    The MoG with SIHOON [&amp;] SOHYEON
+  </small>
+  <nav>
+    <ul>
+      <li> <%=  link_to  "About " ,    '#'  %> </ li>
+      <li> <%=  link_to  "Contact " ,  '#'  %> </ li>
+      <li>  <%=  link_to  "News" ,  '#'  %> </ li>
+    </ul>
+  </nav>
+</footer>
+    </div>
+  </body >
 </html>

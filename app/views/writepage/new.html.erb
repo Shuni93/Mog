@@ -1,7 +1,14 @@
-<h1>글쓰기</h1>
+<div id="p_title">
+     <div id="post_title">
+          <p>내 맘대로 작성하는 MoG</p>
+     </div>
+     <div id="arrow">
+          <img src="/assets/arrow.png" border="0"  alt="이미지" >
+     </div>
+</div>
 <form action="/new_query" method="POST">
-  제목 : <input type="text" name="title"><br>
-  내용 : <input type="text" name="content"><br>
-  <button type="submit">글쓰기</button>
+     제목 : <input type="text" name="title"><br>
+     내용 :</br> <textarea id="textarea" name="content" rows="5" cols="28"></textarea></br>
+     <button type="submit">글쓰기</button>
 </form>
 <a href="/index">돌아가기</a>
